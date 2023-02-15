@@ -57,16 +57,16 @@
  */
 
 // Arithmetic Operations
-let a = 100;
-let b = 45;
+// let a = 100;
+// let b = 45;
 
-let sum = a + b;
+// let sum = a + b;
 
 // let sumElement = document.getElementById('sum');
 // sumElement.innerText = sum;
-console.log(sum);
+// console.log(sum);
 
-let difference = a - b;
+// let difference = a - b;
 
 // let differenceElement = document.getElementById('difference');
 // differenceElement.innerText = difference;
@@ -124,6 +124,7 @@ numberOfOranges++ //  99 add 1 in the next variable caall
 // let p = p * 6; // let p *= 6;
 // let q = q / 6; // let q /= 6;
 
-// Comparison Operator
+// Comparison Operator (<, >, <=, >=, ,)
 let d = -34;
 console.log(d > 10);
+
