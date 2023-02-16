@@ -37,6 +37,6 @@ for (let js = 1; js <= 7; js++) {
 // console.log(1 + 2 + 3 + 4 + 5);
 let sum = 0;
 for (let index = 1; index <= 5; index++) {
-    sum += index;
+    sum += index; //sum = sum + index;
 }
 console.log('Sum is ' + sum);
