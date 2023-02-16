@@ -1,5 +1,5 @@
 // Swicth Statement - Is used in decision making and when you want to use equality operator
-//  Science Subjects- Physics, Chemistry, Biology, Technical Drawing, English, Mathematics
+// Science Subjects- Physics, Chemistry, Biology, Technical Drawing, English, Mathematics
 // Social Science Subjects - Accounting, Geology, commerece, Marketing, English, Mathematics
 // Arts Subjects - Government, Economics, LIterature, History, English, Mathematics
 
