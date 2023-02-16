@@ -16,16 +16,17 @@ console.log('Eligible to Vote');
 console.log('Not Eligible to Vote')
 }
 
-// we want to output the exact grade the student had based on their score
+// We want to output the exact grade the student had based on their score
 // if score >= 70, A1
 // if score is between 65 & 69, B2
 // if score is between 60 & 64, B3
 // if score is between 55 & 59, C4
-// if score is between 50 & 55, C5
+// if score is between 50 & 54, C5
 // if score is between 45 & 49, C6
-// if score is between 41 & 44, D7
-// if score is between 31 & 40, E8
+// if score is between 40 & 44, D7
+// if score is between 31 & 39, E8
 // if score is below 30, F9
+
 let mathScore = 120;
 if (mathScore >= 70 && mathScore <= 100) {
     console.log('A1');
@@ -48,3 +49,5 @@ if (mathScore >= 70 && mathScore <= 100) {
 } else {
     console.log('Invalid score');
 }
+
+// Edge Case: Are cases that are not the typical flow 
