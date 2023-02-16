@@ -13,7 +13,7 @@ let expenses = '2000';
 console.log(true == 0);
 
 //  Ternary Operator (condition) ? :
-let myAge = 34;
+// let myAge = 34;
 // if age  is greater than or equal to 18, print 'Eligible to vote'
 //  if age is less than 18, print 'Not Eligible to vote'
 // (condition) ? true : false
@@ -46,3 +46,4 @@ let NECO = 'PASS';
 
 const result = (26 -2) + 4 / 2;
 console.log(result);
+
