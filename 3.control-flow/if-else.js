@@ -16,6 +16,14 @@ console.log('Eligible to Vote');
 console.log('Not Eligible to Vote')
 }
 
+// IF
+// if (condition) {
+    
+// }
+
+
+// IF...ELSE IF... ELSE
+
 // We want to output the exact grade the student had based on their score
 // if score >= 70, A1
 // if score is between 65 & 69, B2
@@ -50,4 +58,4 @@ if (mathScore >= 70 && mathScore <= 100) {
     console.log('Invalid score');
 }
 
-// Edge Case: Are cases that are not the typical flow 
+// Edge Cases: Are cases that are not the typical flow 
