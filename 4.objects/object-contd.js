@@ -139,3 +139,46 @@ const address2 = new Object();
     console.log(y);
 
     // Next Class: Remind me, on how to copy/clone an object
+
+
+    const person = {
+        name: 'Blessing',
+        age: 23,
+        gender: 'female'
+    }
+// adding/modifying an object
+    person.height = '5ft';
+
+    // factory method
+    function person1(name, age, gender){
+        return {
+            name: name,
+            age: age,
+            gender: gender
+        }
+    }
+
+    const person1 = person('Blessing', 23, 'female');
+
+
+    // How do we copy/clone an object?
+    // option 1 - Using Object.assign()
+
+    const firstBook = {
+        author: 'Chimamanda Adichie',
+        title: 'HAlf of a yellow sun',
+        yearPublished: 2008
+    }
+// Wrong way to make a copy or clone of an object
+    // const secondBook = firstBook;
+
+// correct way to make a copy/clone an object
+    const secondBook = object.assign({}, firstBook)
+    console.log(firstBook);
+    console.log(scondBook);
+
+    secondBook.title = 'Purple Hibiscus';
+
+    console.log('After title of second book');
+    console.log(firstBook);
+    console.log(secondBook);
