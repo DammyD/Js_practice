@@ -8,7 +8,7 @@ const address = {
 }
 console.log(address);
 
-// Constructor Method
+// Constructor Notation
 const address2 = new Object(); 
     address2.street = 'Berger';
     address2.city = 'Lagos';
@@ -16,7 +16,7 @@ const address2 = new Object();
 
     console.log(address2);
 
-    // factory Method
+    // Constructor method
     function Address(street, city, zip) {
         this.street = street;
         this.city = city;
@@ -75,7 +75,7 @@ const address2 = new Object();
     student.jambScore.BIO = 70;
     console.log(student);
 
-    // Constructor methodfor students
+    // Constructor method for students
     function Student(fitrstName, LastName, age) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -127,6 +127,8 @@ const address2 = new Object();
     console.log(a, b, c, d);
 
     // Reference
+    // Because of the reference side effect that applies to an object
+    // you cannot say an object == object. You have to apply other method
     let x = {
         value: 10
     }
@@ -140,6 +142,8 @@ const address2 = new Object();
 
     // Next Class: Remind me, on how to copy/clone an object
 
+
+    // Third class on Object
 
     const person = {
         name: 'Blessing',
@@ -182,3 +186,63 @@ const address2 = new Object();
     console.log('After title of second book');
     console.log(firstBook);
     console.log(secondBook);
+
+    // Option 2 - Using spread syntax i.e ...
+    const thirdBook = {...firstBook};
+    thirdBook.title = 'Americanah';
+    console.log({firstBook});
+    console.log({thirdBook});
+
+
+    // Optin 3 - Using the method JSON.parse(JSON.Stringify(()))
+    const fourthBook = JSON.parse
+    // JSON - JavaScript Object Notation
+    // JSON.stringify converts an object into a string and trip that object a reference effect
+    // JSON.parse is a format for representing data. It reverses the conversion
+    fourthBook.title = "Notes on Grief";
+    console.log({firstBook});
+    console.log({fourthBook});
+
+    // the curly brace helps to label what is been logged out in the console
+
+    // Merge Objects
+    // Option 1 - Using Object.assign
+    const firstBookDetails = {
+        publisher:'Penguin Books',
+        copiedSold: '1 million',
+        pages: '502',
+        edition: '3rd'
+    }
+// syntax
+    // const firstBook = Object.assign(target, source);
+    // const firstBookInfo = Object.assign(firstBook, firstBookDetails);
+ Object.assign(firstBook, firstBookDetails);
+    console.log({firstBook});
+
+    // Option 2 - Using spread operator...
+    const secondBookDetails = {
+        publisher:'Penguin Books',
+        copiedSold: '1 million',
+        pages: '502',
+        edition: '3rd'
+    }
+
+    const secondBookInfo = {...secondBook, secondBookDetails};
+    console.log({secondBookInfo});
+
+    // Enumeration of properties in an Object
+    // for...in loops - traverses between properties
+
+    for(const property in secondBookInfo) {
+        // action to be carried out on each property
+        console.log(property);
+        console.log(secondBookInfo[property]);
+    }
+
+    // Object.keys()
+    console.log(Object.keys(secondBookInfo));
+    // for..of loops
+    for (let key of Object.keys(secondBookInfo)){
+        console.log(key);
+        console.log(secondBookInfo[key]);
+    }
