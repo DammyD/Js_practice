@@ -92,8 +92,47 @@ if(isFerrariPresent) {
 }
 
 console.log(allCars);
-/** Practice this common array methods used
- * array.filter()
- * array.map()
- * */
+
+// let firstName = {value: 'Tunde'};
+let secondname = firstName; //reference to the value
+
+let firstName = 'Daniel';
+
+// Everytime you create an object, you are sort of creating a refernece to a value
+let a = {value: 1};
+let b = {value: 1};
+
+console.log(a == b); //false
+console.log(Math.random());
+
+let arrayOfCarsObjects = [
+    {car: 'Nissan'}, 
+    {car: 'Toyota'},
+    {car: 'Audi'},
+    {car: 'Maseratti'},
+    {car: 'Lamborghini'}
+];
+
+let maseratti = arrayOfCarsObjects.find(function (element) {
+    return element.car === 'Maseratti'
+});
+console.log(maseratti);
+
+// The function rewtitten does not have a function name and they are called anonymous function
+
+// The method includes is not used to compare objects. It is only use to find if an item is present in an array
+// let isNissanPresent = allCars.includes({car: 'Nissaan'});
+
+console.log(isNissanPresent) // false
+
+// array.find() //to find if an array exist. It takes in a function call a callback function also it has a sort of looping logic in it
+
+
+// Anything that has a refernece type you cannot use .includes() instead you .find()
+
+let isNissanPresent = arrayOfCarsObjects.find(function (carObject) {
+    return carObject.car === 'Nissan';
+})
+console.log(`Nissan Presnet: ${isNissanPresent}`); // {car: 'Nissan}
+
 
