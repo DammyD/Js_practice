@@ -1,7 +1,7 @@
 /** Practice this common array methods used
  * array.filter()
  * array.map() - when you want to transform all the elements in an array
- * 
+ * array.reduce() -  returns a similar value
  * array.find() //to find if an array exist. It takes in a function call a callback function also it has a sort of looping logic in it
  * */
 
@@ -25,7 +25,9 @@ console.log(allCarsInUpperCase);
 
 
 // Functions are one of the fundamental building block in programming
-// They are used to perform a set of operation. They 
+// They are used to perform a set of operation. They can be reused multiple times
+// They always return an output
+
 
 // function that caps bottles
 // defining a function
@@ -61,7 +63,7 @@ console.log(spriteBottle);
 // Function Expression Using arrow method / Arrow function expression
 // => replaces the function keyword
 // the {} is optional
-// Whenevr we use the arow function without cuurly braces we ndon't need a return keyword
+// Whenever we use the arow function without cuurly braces we ndon't need a return keyword
 const bottleCapper3 = (bottle, cap) => bottle + ' and ' + cap;
 const fantaBottle = bottleCapper3('transparent bottle', 'orange cap');
 console.log(fantaBottle);
