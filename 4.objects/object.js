@@ -40,7 +40,12 @@ const Car1 = {
   /**
    * Constructor Notation
    */
-  
+  // the new keyword is use to create/instantiate an object function
+
+  // syntax
+  /**
+   * const variableName = new <what you want to create an instane of>;
+   */
   const Car2 = new Object();
   Car2.brand = "Mercedes Benz";
   Car2.color = "white";
