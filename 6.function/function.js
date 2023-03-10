@@ -63,7 +63,7 @@ console.log(spriteBottle);
 // Function Expression Using arrow method / Arrow function expression
 // => replaces the function keyword
 // the {} is optional
-// Whenever we use the arow function without cuurly braces we ndon't need a return keyword
+// Whenever we use the arow function without curly braces {}, we don't need a return keyword
 const bottleCapper3 = (bottle, cap) => bottle + ' and ' + cap;
 const fantaBottle = bottleCapper3('transparent bottle', 'orange cap');
 console.log(fantaBottle);
