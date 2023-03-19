@@ -3,7 +3,7 @@
 /**
  * properties - brand, color, number of tyres, number of doors, isAutomatic
  *
- * functionalities - move forward, reverse, accelerate, play music, stop, start
+ * functionalities / method - move forward, reverse, accelerate, play music, stop, start
  */
 
 // How can we create an object?
