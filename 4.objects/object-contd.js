@@ -47,7 +47,7 @@ const address2 = new Object();
     console.log(address6);
 
     // Nested Objects
-    const student= {
+    const student = {
         firstName: 'Blessing',
         lastName: 'Dawodu',
         age: 20,
@@ -76,7 +76,7 @@ const address2 = new Object();
     console.log(student);
 
     // Constructor method for students
-    function Student(fitrstName, LastName, age) {
+    function Student(firstName, lastName, age) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -179,7 +179,7 @@ const address2 = new Object();
 // correct way to make a copy/clone an object
     const secondBook = object.assign({}, firstBook)
     console.log(firstBook);
-    console.log(scondBook);
+    console.log(secondBook);
 
     secondBook.title = 'Purple Hibiscus';
 
@@ -197,7 +197,7 @@ const address2 = new Object();
     // Optin 3 - Using the method JSON.parse(JSON.Stringify(()))
     const fourthBook = JSON.parse
     // JSON - JavaScript Object Notation
-    // JSON.stringify converts an object into a string and trip that object a reference effect
+    // JSON.stringify converts an object into a string and rip that object a reference effect
     // JSON.parse is a format for representing data. It reverses the conversion
     fourthBook.title = "Notes on Grief";
     console.log({firstBook});
