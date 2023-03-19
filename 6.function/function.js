@@ -73,3 +73,60 @@ const bottleCapper4 = (bottle, cap) => {
     let result = bottle + ' and ' + cap;
     return result;
 }
+// Parameter are container that takes in the arguments
+
+// function without arguments
+function greet(){
+    return 'Hello Stutern learners'
+};
+console.log(greet());
+
+// function with arguments
+function greet2(name) {
+    return 'Hello ' + name;
+}
+
+console.log(greet2('Tina'));
+
+// By default every function has a return statement
+function greet3() {
+    console.log('Hello World');
+};
+// there is a return keyword here that returns undefined
+greet3();
+
+// A callback function can be pass as a parameter into another function
+
+function sayHi() {
+    return 'Hi ';
+
+}
+
+function greetings(name, sayHi) {
+    return sayHi() + name;
+}
+
+console.log(greetings('Daniel', sayHi));
+
+function createCar(){
+    return {
+        name: 'Toyota',
+        model: 'Avensis'
+    }
+}
+
+const createCar = function () {
+    return {
+        name: 'Toyota',
+        model: 'Avensis'
+    }
+}
+
+// function () becomes () => : Meaning the arrow key eliminate the function keyword
+
+const createCar = () => {
+    return {
+        name: 'Toyota',
+        model: 'Avensis'
+    }
+}
