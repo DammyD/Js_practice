@@ -150,3 +150,11 @@ let areas = circleOperation([1, 2, 3], area);
 console.log(areas);
 
 // Any function you pass a parameter into it are called callback function
+
+const usingMap = radii.map(function (radius) {
+    return radius * 2;
+});
+
+const usingMapToCalCDiameter = [1, 2, 3].map(diameter);
+console.log(usingMapToCalCDiameter);
+
