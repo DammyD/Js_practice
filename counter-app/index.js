@@ -1,3 +1,11 @@
+// Here are the basic rules to abide by:
+
+// The counter must begin at 0.
+// The increment button increse the count it by 1.
+// The decrement button must decrese the count by 1.
+// The reset button must reset the count back to 0.
+// The decrement button must NOT decrement the count if it's at 0. In other words, negative counts
+
 // Initial value of the counter
 let count = 0;
 
